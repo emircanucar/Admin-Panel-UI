@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Panel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="assets/css/style.min.css" />
+</head>
+
+<body>
+  <!-- main container -->
+  <div>
+    <!-- side bar -->
+    <nav class="sidebar-nav d-none d-lg-flex flex-column align-items-center" id="sideBar">
+      <a class="sidebar-nav-close-btn d-block d-lg-none" onclick="showSideBar()">
+        <i class="bi bi-x"></i>
+      </a>
+      <span class="sidebar-nav-head fs-1 fw-medium text-white p-4">Admin</span>
+      <ul class="sidebar-nav-menu w-100">
+
+        <li>
+          <a href="index.html" class="d-flex justify-content-between align-items-center ps-4 pe-2">
+            <div class="d-flex align-items-center  gap-4">
+              <i class="menu-icon icon-call"></i>
+              <span>Live Calls</span>
+            </div>
+            <i class="menu-icon icon-three-dot"></i>
+          </a>
+        </li>
+        <li>
+          <a href="tutor.html" class="active d-flex justify-content-between align-items-center ps-4 pe-2">
+            <div class="d-flex align-items-center  gap-4">
+              <i class="menu-icon icon-people"></i>
+              <span>Tutor Online</span>
+            </div>
+            <i class="menu-icon icon-three-dot"></i>
+          </a>
+        </li>
+        <li>
+          <a href="subs.html" class="d-flex justify-content-between align-items-center ps-4 pe-2">
+            <div class="d-flex align-items-center  gap-4">
+              <i class="menu-icon icon-subscription"></i>
+              <span>Active Subscription</span>
+            </div>
+            <i class="menu-icon icon-three-dot"></i>
+          </a>
+        </li>
+        <li>
+          <a href="earning.html" class="d-flex justify-content-between align-items-center ps-4 pe-2">
+            <div class="d-flex align-items-center  gap-4">
+              <i class="menu-icon icon-earning"></i>
+              <span>Earning/Spending</span>
+            </div>
+            <i class="menu-icon icon-three-dot"></i>
+          </a>
+        </li>
+
+
+      </ul>
+    </nav>
+
+    <div class="content-and-topbar-wrapper">
+      <!-- top bar -->
+      <div class="row g-0">
+        <div class="col-12">
+          <div class="top-bar d-flex justify-content-between align-items-center p-3 p-sm-3 px-md-5">
+            <div class="top-bar-start d-flex gap-3 align-items-center">
+              <a class="top-bar-start-menubtn d-block d-lg-none fs-1 decoration-none text-black" id="sideMenuBtn"
+                onclick="showSideBar()">
+                <i class="bi bi-list"></i>
+              </a>
+              <span class="top-bar-start-header d-none d-md-block fs-3 fw-bold">Hello &#128075 </span>
+            </div>
+
+            <div class="top-bar-end d-flex align-items-center justify-content-between gap-2 gap-sm-5">
+              <input type="text" class="top-bar-end-searchBox w-100 d-none d-sm-block" />
+              <div class="top-bar-end-user fs-1">
+                <i class="bi bi-person-circle text-secondary"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- content -->
+      <div class="content-section p-2 p-sm-4 p-md-4">
+        <div class="row g-3">
+          <div class="col-12 col-md-7">
+            <div class="content d-flex justify-content-center align-items-center bg-white rounded">
+              (content)
+            </div>
+          </div>
+          <div class="col-12 col-md-5">
+            <div class="content d-flex justify-content-center align-items-center bg-white rounded">
+              (content)
+            </div>
+          </div>
+        </div>
+        <div class="row mt-1 g-3">
+          <div class="col-12 col-md-5">
+            <div class="content d-flex justify-content-center align-items-center bg-white rounded">
+              (content)
+            </div>
+          </div>
+          <div class="col-12 col-md-7">
+            <div class="content d-flex justify-content-center align-items-center bg-white rounded">
+              (content)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"
+    integrity="sha512-EmNxF3E6bM0Xg1zvmkeYD3HDBeGxtsG92IxFt1myNZhXdCav9MzvuH/zNMBU1DmIPN6njrhX1VTbqdJxQ2wHDg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    /* side bar menu btn */
+
+    function showSideBar() {
+      let sideBar = document.getElementById("sideBar")
+      sideBar.classList.toggle("show-menu");
+    }
+  </script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
