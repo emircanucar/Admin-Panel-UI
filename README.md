@@ -13,5 +13,5 @@ JavaScript <br>
 
 TECH CROWD <br>
 Admin Panel UI Kit <br>
-figma.com/community/file/1189482134578785550/admin-panel-ui-kit?searchSessionId=lsan09ds-0036e33cztqnb <br>
+<a href="https://www.figma.com/community/file/1189482134578785550"> Link </a><br>
 (Some changes were made.)
